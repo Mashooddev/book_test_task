@@ -1,0 +1,137 @@
+.Navigation_bar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: #F7F8F9;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 0;
+    margin-bottom: 100px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    z-index: 100;
+}
+.logo_title{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.logo_title h1{
+    font-size: 25px;
+    color: red;
+    font-weight: 700;
+}
+.search_input{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.search_input .input_field{
+    width: 750px;
+    padding: 10px;
+    border-radius: 10px;
+    border-radius: 5px;
+    border: none;
+    
+}
+.cart_menu{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.logo_cart{
+    font-size: 25px;
+   
+}
+.cart{
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.counter{
+    width: 17px;
+    height: 17px;
+    background-color: red;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+
+}
+.auth-btn{
+    display: flex;
+    gap: 5px;
+}
+.LogInBnt{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.logingstatuset{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userNameSetting{
+  padding: 0px 10px 0px 5px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 430px) and (max-width: 786px) {
+    .Navigation_bar {
+      height: auto; /* Adjust height as needed for small screens */
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+   
+    .logo_title {
+      width: 100%;
+    }
+  
+    .search_input {
+      width: 100%;
+    }
+  
+    .cart_menu {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 430px){
+    .Navigation_bar {
+      height: auto; /* Adjust height as needed for small screens */
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+    .logo_title {
+      width: 100%;
+    }
+  
+    .search_input {
+      width: 100%;
+    }
+  
+    .cart_menu {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
